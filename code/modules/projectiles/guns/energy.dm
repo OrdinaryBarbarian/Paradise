@@ -307,3 +307,18 @@
 			var/obj/item/ammo_casing/energy/shot = ammo_type[select] //Necessary to find cost of shot
 			if(R.cell.use(shot.e_cost)) 		//Take power from the borg...
 				cell.give(shot.e_cost)	//... to recharge the shot
+
+
+/obj/item/gun/energy/emitter
+	name = "emitter laser cannon"
+	desc = "What a good gun"
+	icon_state = "emittercannon"
+	item_state = "emittercannon_1"
+	w_class = WEIGHT_CLASS_BULKY
+	force = 10
+	flags =  CONDUCT
+	slot_flags = SLOT_BACK
+	can_holster = FALSE
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/emitter)
+	ammo_x_offset = 3
+	shaded_charge = 1

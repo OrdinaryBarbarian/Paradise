@@ -1155,3 +1155,16 @@
 	reqs = list(/obj/item/stack/sheet/cardboard = 5,
 				/obj/item/toy/crayon/spraycan = 1)
 	category = CAT_MISC
+
+/datum/crafting_recipe/emittercannon
+	name = "Emitter cannon"
+	result = /obj/item/gun/energy/emitter
+	time = 50
+	tools = list(TOOL_WELDER, TOOL_WRENCH)
+	reqs = list(/obj/item/stack/cable_coil = 30,
+				/obj/item/stack/sheet/plasteel = 10,
+				/obj/item/stack/sheet/plasmaglass = 5,
+				/obj/item/circuitboard/emitter = 1,
+				/obj/item/stock_parts/cell = 1)
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON

@@ -342,3 +342,8 @@
 	fire_sound = 'sound/weapons/marauder.ogg'
 	e_cost = 250
 	delay = 30
+
+/obj/item/ammo_casing/energy/laser/emitter
+	projectile_type = /obj/item/projectile/beam/emitter
+	delay = 20
+	e_cost = 125
